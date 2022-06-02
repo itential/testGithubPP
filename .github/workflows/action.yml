@@ -64,4 +64,3 @@ jobs:
       - uses: actions/checkout@v2
       - name: Generate Artifact.json file
         run: chmod +x ./scripts/commit.sh && ./scripts/commit.sh
-        run: echo 'test'
