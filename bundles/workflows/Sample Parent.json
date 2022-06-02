@@ -15,7 +15,7 @@
     "properties": {}
   },
   "lastUpdatedVersion": "5.40.5-2021.1.72.0",
-  "last_updated": "2022-05-20T20:25:23.776Z",
+  "last_updated": "2022-06-02T15:05:35.244Z",
   "last_updated_by": {
     "provenance": "local_aaa",
     "username": "admin@pronghorn",
@@ -66,6 +66,7 @@
           "variables": {},
           "data_array": [
             {},
+            {},
             {}
           ],
           "transformation": "",
@@ -78,8 +79,8 @@
       "deprecated": false,
       "groups": [],
       "actor": "job",
-      "x": 0.46348517715112075,
-      "y": 0.3461962513781698
+      "x": 0.47058823529411764,
+      "y": 0.35705669481302776
     },
     "7dfd": {
       "name": "getGoldenConfigTree",
@@ -104,38 +105,38 @@
       "deprecated": false,
       "groups": [],
       "actor": "Pronghorn",
-      "x": 0.3080260303687636,
-      "y": 0.5005512679162073,
+      "x": 0.22823529411764706,
+      "y": 0.4837153196622437,
       "scheduled": false
     },
-    "f536": {
-      "name": "childJob",
-      "canvasName": "childJob",
-      "summary": "Run Child Job",
-      "description": "Runs a child job inside a workflow.",
+    "e403": {
+      "name": "stub",
+      "canvasName": "stub",
+      "summary": "Stub",
+      "description": "Create a stub for an automated task",
       "location": "Application",
       "locationType": null,
       "app": "WorkFlowEngine",
-      "type": "operation",
-      "displayName": "WorkFlowEngine",
+      "type": "automatic",
+      "displayName": "Tools",
       "variables": {
         "incoming": {
-          "task": "",
-          "workflow": "Sample Child 2",
-          "variables": {},
-          "data_array": "",
-          "transformation": "",
-          "loopType": ""
+          "type": "success",
+          "delay": "",
+          "response": "test"
         },
         "outgoing": {
-          "job_details": null
-        }
+          "response": null
+        },
+        "error": "",
+        "decorators": []
       },
       "deprecated": false,
       "groups": [],
-      "actor": "job",
-      "x": 0.6442516268980477,
-      "y": 0.49834619625137816
+      "actor": "Pronghorn",
+      "x": 0.6266666666666667,
+      "y": 0.43063932448733416,
+      "scheduled": false
     }
   },
   "transitions": {
@@ -147,7 +148,7 @@
     },
     "workflow_end": {},
     "1c92": {
-      "f536": {
+      "e403": {
         "type": "standard",
         "state": "success"
       }
@@ -158,13 +159,13 @@
         "state": "success"
       }
     },
-    "f536": {
+    "555d": {},
+    "e403": {
       "workflow_end": {
         "type": "standard",
         "state": "success"
       }
-    },
-    "555d": {}
+    }
   },
   "type": "automation",
   "preAutomationTime": 0,
