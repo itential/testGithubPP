@@ -1,8 +1,8 @@
 {
   "bundleName": "@dsup/jenn-demo",
   "version": "0.0.1",
-  "fingerprint": "6298cea701ac0c00cd730c03",
-  "createdEpoch": "1654181543927",
+  "fingerprint": "6298d34001ac0c00cd730c06",
+  "createdEpoch": "1654182720860",
   "artifacts": [
     {
       "id": "Jenn Demo",
@@ -27,15 +27,6 @@
       "name": "Sample Child",
       "type": "workflow",
       "location": "/bundles/workflows/Sample Child.json",
-      "properties": {
-        "entryPoint": false
-      }
-    },
-    {
-      "id": "Sample Child 2",
-      "name": "Sample Child 2",
-      "type": "workflow",
-      "location": "/bundles/workflows/Sample Child 2.json",
       "properties": {
         "entryPoint": false
       }
